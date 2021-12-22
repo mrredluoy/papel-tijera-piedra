@@ -1,0 +1,283 @@
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('img/PLOK____.TTF');
+   } 
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'digital-clock-font';
+}
+
+body{
+    background-color:#CDDEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+img{
+    width:100% ;
+    height: 70%;
+    border-radius:30px;
+    padding: 2%;
+    background-color: #EEF2FF;
+
+   
+}
+
+
+.contenedor{    
+  
+    width:100vw ;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;   
+    position: relative;
+    justify-content:flex-start;
+    align-items: center;
+  
+    
+   
+}
+.titulo,.card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: 100%;
+    height:10% ;
+    background-color: #FF5959;
+}
+h1{
+    letter-spacing:1vw;
+    text-align: center;
+    font-size: 5vh;
+    color:#EEF2FF;
+}
+
+.card1{
+    width: 60%;
+    height: 15%;
+    justify-content: space-around;
+  
+
+
+}
+.vidaH ,.vidaM{ 
+width: 49%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content:space-evenly;
+align-items:flex-start;
+
+}
+.vidaM{   
+    align-items:flex-end;
+}
+   
+   
+.vidasH ,.vidasM{
+    width: 100%;
+    height:30% ;
+    display: flex;     
+    background-color: #EEF2FF;
+      
+}
+
+.vidasM{
+    flex-direction: row-reverse;
+}        
+      
+
+.vidasMAQUINA,.vidasHUMANO{
+    width:10%;
+    height: 100%;
+    background-color:#676FA3;
+  
+}
+
+.nombres{
+    display: block;
+    font-size: 3.5vh;
+    text-align: center;
+    color:black;
+}
+.card2{
+ width: 60%;
+ height:50% ;
+ padding: 1%;
+ display: flex;
+ justify-content:space-around;
+ align-items: center;
+ 
+
+}
+.cardHumano,.cardVersus,.cardMaquina{
+    width: 30%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+ 
+  
+}
+.cardVersus{
+    justify-content: center;
+}
+
+
+.cardVersus span{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40%; 
+    font-size: 6vw;
+    
+}
+    
+
+.seleccion{
+    width: 100%;
+    height:25% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.imagen ,.imagenM{
+    width:30% ;
+    height:70%;   
+   border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+.card3{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+  
+
+}
+.card3 div{
+    width:45% ;
+    height: 100%;
+    border-radius: 52px;
+   
+}
+
+
+.peligro{
+    border:5px solid  red;
+    animation: animando 1s linear infinite;
+}
+@keyframes animando{
+    0%{ border: 5px solid  red;}
+    50%{border: none;}
+    100%{border:5px solid  red ;}
+}
+
+.peligro1{
+    background-color: red;
+    animation: animando1 1s linear infinite;
+}
+@keyframes animando1{
+    0%{background-color: red;}
+    50%{background-color:blanchedalmond;}
+    100%{background-color: red;;}
+}
+
+.resultado{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+   
+}
+
+.resultado h3{
+    font-size: 5vh;
+    text-align: center;
+}
+
+.resultado span{
+    font-size: 4vh;
+    text-align: center;
+    color: rgb(151, 80, 29);
+}
+
+@media screen  and (max-width:1200px){
+    .card1{
+        width: 70%;        
+    }
+    .card2{
+        width: 70%;
+    }
+}
+
+@media screen  and (max-width:800px){
+    .card1{
+        width: 95%;        
+    }
+    .card2{
+        width: 95%;
+    }
+    .cardVersus{
+        width: 10%;
+        justify-content: center;
+    }
+    .cardVersus span{
+        font-size: 5.5vw;
+        height: 30%;
+        
+    }
+    h1{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen  and (max-width:500px){
+    .card1{
+        width: 99%;        
+    }
+    .card2{
+        width: 99%;
+    }
+    .cardVersus{
+        width: 10%;
+        justify-content: center;
+        
+    }
+    .cardVersus span{
+        font-size: 4vw;
+        height: 30%;
+        
+    }
+    .cardHumano,.cardMaquina{
+        width: 50%;
+    }
+    .resultado{
+        width: 99%;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    .resultado h3{
+       font-size: 5vw;
+        text-align: center;
+    }
+}

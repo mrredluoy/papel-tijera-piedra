@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="sonido" src="img/sonido.mp3"></audio>
+    <div class="contenedor">
+   
+         <div class="titulo">  <h1>Piedra-Papel-Tijera</h1></div>
+        <div class="card1">
+          <div class="vidaH">              
+              <div id="vidaHumana" class="vidasH">
+                  <div class="vidasHUMANO "></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO"></div>
+                  <div class="vidasHUMANO "></div>
+              </div>
+              <span class="nombres">User</span>
+          </div>
+
+          <div class="vidaM">
+            <div  id="vidaMaquina" class="vidasM" >
+                <div class="vidasMAQUINA "></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+                <div class="vidasMAQUINA"></div>
+            </div>
+            <span class="nombres">Pc</span>
+          </div>
+        </div>
+
+        <div class="card2">
+           
+            <div class="cardHumano">
+                 
+                     <img id="displayIMG" src="img/interrogacion.png" alt="">
+                      
+                 <div class="seleccion">
+                    <img id="piedra" src="img/piedra1.png" alt="" class="imagen">
+                    <img id="tijera" src="img/tijera1.png" alt="" class="imagen">
+                    <img id="papel" src="img/papel1.png" alt="" class="imagen">
+                 </div>
+            </div>
+            <div  class="cardVersus"><span>vs</span> <span></span></div>
+            <div class="cardMaquina">
+                <img id="maquina" src="img/interrogacion.png" alt="">
+                 <div class="seleccion">
+                    <img id="PIEDRA" src="img/piedra.png" alt="" class="imagenM">
+                    <img id="TIJERA" src="img/tijera.png" alt="" class="imagenM">
+                    <img id="PAPEL" src="img/papel.png" alt="" class="imagenM">
+                 </div>
+            </div>
+        </div>
+        <div class="resultado">
+            <h3 id="Mfinal">Haz tu movimiento!!</h3>
+            <span id="mesenger">...</span>
+        </div>
+       
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
