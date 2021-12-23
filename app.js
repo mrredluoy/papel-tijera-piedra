@@ -79,9 +79,7 @@ function promesa(){
             if(vidasHumanas.children.length==0){
                papelACTIVATION=false
                piedraACTIVATION=false
-               tijeraACTIVATION=false
-               win.classList.add('win1')
-               win.textContent='GAME OVER'
+               tijeraACTIVATION=false         
                mesenger.textContent='Game Over'
                mFINAL.textContent='PARECE NO TUVISTE SUERTE'
              } 
@@ -153,8 +151,6 @@ piedra.addEventListener('click',e=>{
  piedra.style.border='5px solid  #f1063c'
  
  maquina()
-
-
 promesa()
          .then(promesa)
          .then(promesa)
@@ -178,14 +174,13 @@ papel.addEventListener('click',e=>{
     displayHumano.setAttribute('src',"img/papel1.png")
     displayHumano.classList.add(`${claaaa}`)
     papel.style.border='5px solid  #f1063c'
-    maquina()
-  
-
+    maquina() 
     promesa()
     .then(promesa)
     .then(promesa)
     .then(promesa)
-    .then(promesa)  
+    .then(promesa)
+    .then(promesa)   
    }
  })   
 
@@ -201,12 +196,12 @@ tijera.addEventListener('click',e=>{
     displayHumano.setAttribute('src',"img/tijera1.png")
     displayHumano.classList.add(`${claaaa}`)
     tijera.style.border='5px solid  #f1063c'
-    maquina()
-    
+    maquina()    
     promesa()
     .then(promesa)
     .then(promesa)
     .then(promesa)
+    .then(promesa) 
     .then(promesa)  
    
 }  
